@@ -1,0 +1,41 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #111 0%, #000 70%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Game container to create cinematic framing */
+.game-container {
+    padding: 30px;
+    background: linear-gradient(145deg, #0b0b0b, #1a1a1a);
+    border-radius: 18px;
+    box-shadow:
+        0 40px 80px rgba(0, 0, 0, 0.9),
+        inset 0 0 60px rgba(255, 255, 255, 0.03);
+}
+
+/* Canvas styling for 2.5D table look */
+canvas {
+    background: linear-gradient(
+        to bottom,
+        #1f4d3a 0%,
+        #173b2d 50%,
+        #0f2a20 100%
+    );
+    border-radius: 16px;
+    border: 8px solid #3a2a1f;
+    box-shadow:
+        inset 0 10px 25px rgba(255, 255, 255, 0.08),
+        inset 0 -20px 40px rgba(0, 0, 0, 0.6),
+        0 25px 50px rgba(0, 0, 0, 0.8);
+}
